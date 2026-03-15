@@ -1,4 +1,4 @@
-# 01-image-handling: Image Processing Basics
+# 01-image-handling
 This assignment implements fundamental image processing operations using NumPy and OpenCV. 
 It demonstrates how to manipulate images at the pixel level, work with color channels, and apply geometric transformations.
 
