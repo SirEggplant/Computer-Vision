@@ -55,4 +55,4 @@ What to expect:
 - data/                      – sample images (mario_small.jpg, coin_small.png).
 - requirements.txt           – Python dependencies.
 
-This assignment is part of CSCI-631: Foundations of Computer Vision at RIT.
+This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.
