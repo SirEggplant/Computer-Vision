@@ -1,9 +1,7 @@
 # 03-template-matching
-
 This assignment implements object detection using template matching with multi-scale support and non-maximal suppression.
 
 **What It Does**
-
 - Performs template matching using OpenCV's matchTemplate with normalized cross-correlation.
 - Supports multi-scale detection by scaling the image down at multiple levels.
 - Converts score maps to bounding boxes at each scale.
@@ -25,8 +23,7 @@ pip install -r requirements.txt
 
 **Running Template Matching**
 
-Basic usage:
-python src/template_match.py --image <scene_image> --template <template_image> --threshold <value> --nms-threshold <value>
+Basic usage: python src/template_match.py --image <scene_image> --template <template_image> --threshold <value> --nms-threshold <value>
 
 Example with provided images:
 ```bash
@@ -34,15 +31,15 @@ python src/template_match.py --image data/mario_small.jpg --template data/coin_s
 ```
 
 Optional arguments:
---scale-factor : Downscaling factor for each level when doing multi-scale detection (default: 0.5).
---levels       : Number of levels (image sizes) to use (default: 1, meaning only original size).
+- --scale-factor : Downscaling factor for each level when doing multi-scale detection (default: 0.5).
+- --levels       : Number of levels (image sizes) to use (default: 1, meaning only original size).
 
 Example with multi-scale:
 ```bash
 python src/template_match.py --image data/mario_small.jpg --template data/coin_small.png --threshold 0.7 --nms-threshold 0.3 --scale-factor 0.8 --levels 3
 ```
 
-What to expect:
+**What to expect:**
 - The script will open a window showing the scene with bounding boxes drawn around detected objects.
 - The number of matches is displayed at the bottom left.
 - Press any key in the window to close it.

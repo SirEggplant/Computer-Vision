@@ -2,9 +2,8 @@
 This assignment implements fundamental image processing operations using NumPy and OpenCV. 
 It demonstrates how to manipulate images at the pixel level, work with color channels, and apply geometric transformations.
 
-## What It Does
+**What It Does**
 The module (src/image_handling.py) provides functions for:
-
 - Conversions between uint8 and float32 with proper scaling.
 - Cropping with out‑of‑bounds handling (pixels outside the image become black).
 - Scaling by factor 2 using both NumPy slicing and OpenCV.
@@ -22,7 +21,7 @@ The included demo script loads an image, applies most of the above transformatio
 - Python 3.10+
 - Required packages: numpy, opencv-python
 
-**Run the demo**
+**Running the demo**
 
 ```bash
 cd 01-image-handling
@@ -43,3 +42,5 @@ python src/run_demo.py path/to/your/image.jpg
 - src/run_demo.py – demonstration script.
 - data/bouquet.png – sample image.
 - requirements.txt – list of dependencies.
+
+This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.

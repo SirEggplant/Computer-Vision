@@ -1,5 +1,4 @@
 # 02-color-spaces
-
 This assignment explores two core computer vision topics: 
 color space manipulation for image enhancement and projective geometry for panorama creation. 
 The first part implements an underwater image enhancement pipeline using gain adjustment and partial histogram equalization. 
@@ -31,10 +30,10 @@ Part 2: Panorama Stitching (panorama.py)
 cd 02-color-spaces
 pip install -r requirements.txt
 ```
+
 **Running Underwater Enhancement**
 
-Basic usage:
-python src/underwater.py --input <image_path> --output <output_path>
+Basic usage: python src/underwater.py --input <image_path> --output <output_path>
 
 Example with provided images:
 ```bash
@@ -42,8 +41,8 @@ python src/underwater.py --input data/underwater01.jpg --output enhanced01.jpg
 ```
 
 Optional parameters:
---gain-b , --gain-g , --gain-r : multipliers for blue, green, and red channels (defaults: 0.9, 0.9, 1.3).
---alpha : blending factor for partial histogram equalization (default: 0.7).
+- --gain-b , --gain-g , --gain-r : multipliers for blue, green, and red channels (defaults: 0.9, 0.9, 1.3).
+- --alpha : blending factor for partial histogram equalization (default: 0.7).
 
 Example with custom parameters:
 ```bash
@@ -56,8 +55,7 @@ The enhanced image will be saved to the location specified by --output.
 
 The script src/panorama.py loads two images and lets you manually select matching points.
 
-Usage:
-python src/panorama.py --image1 <path> --image2 <path> --output <output_path> [--border-size <pixels>]
+Usage: python src/panorama.py --image1 <path> --image2 <path> --output <output_path> [--border-size <pixels>]
 
 Example with provided images:
 ```bash
@@ -66,7 +64,7 @@ python src/panorama.py --image1 data/paris_a.jpg --image2 data/paris_b.jpg --out
 
 The optional --border-size argument controls the size of the blending border (default: 50).
 
-Interactive workflow:
+**Interactive workflow:**
 1. Two windows will appear: "left image" and "right image".
 2. Click on a distinctive point in the left image (e.g., a corner of a building).
 3. Immediately click on the corresponding point in the right image.
@@ -85,3 +83,5 @@ Tip: Choose points that are spread out across the scene and not collinear for be
   - paris_a.jpg, paris_b.jpg, paris_c.jpg
 - requirements.txt – list of Python dependencies.
 - panorama_example.jpg - jpg of the result from panorama.
+
+This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.
