@@ -198,20 +198,31 @@ def get_matching_points(
     https://opencv2-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_matcher/py_matcher.html
     """
     sift = cv.SIFT.create()
-    matcher = cv.FlannBasedMatcher.create()
-    # Detect keypoints and compute discriptors for both images
-    keypoint1, desciptor1 = sift.detectAndCompute(image_ref, None)
-    keypoint2, desciptor2 = sift.detectAndCompute(image_query, None)
-    # Match descriptors from query to reference image
-    matches = matcher.match(desciptor2, desciptor1)
-    # Filter matches by distance threshold
-    mindistance = min(m.distance for m in matches)
-    goodmatches = [m for m in matches if m.distance < 3 * mindistance]
-    # Extract the matced point coordinates
-    query = np.array([keypoint2[m.queryIdx].pt for m in goodmatches])
-    reference = np.array([keypoint1[m.trainIdx].pt for m in goodmatches])
+    kp1, des1 = sift.detectAndCompute(image_ref, None)
+    kp2, des2 = sift.detectAndCompute(image_query, None)
 
-    return reference, query
+    if des1 is None or des2 is None or len(kp1) == 0 or len(kp2) == 0:
+        print("No descriptors found in one of the images")
+        return np.array([]), np.array([])
+
+    # Use BFMatcher with Lowe's ratio test
+    bf = cv.BFMatcher()
+    matches = bf.knnMatch(des2, des1, k=2)
+
+    goodmatches = []
+    for m, n in matches:
+        if m.distance < 0.75 * n.distance:
+            goodmatches.append(m)
+
+    print(f"Good matches (Lowe): {len(goodmatches)}")
+
+    if len(goodmatches) < 4:
+        return np.array([]), np.array([])
+
+    query_pts = np.array([kp2[m.queryIdx].pt for m in goodmatches])
+    ref_pts = np.array([kp1[m.trainIdx].pt for m in goodmatches])
+
+    return ref_pts, query_pts
 
 
 def stitch(
