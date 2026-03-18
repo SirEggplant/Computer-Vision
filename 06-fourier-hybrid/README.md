@@ -1,5 +1,4 @@
 # 06-fourier-hybrid
-
 This assignment explores frequency domain processing using the 2D Discrete Fourier Transform. 
 It includes two main demonstrations: 
 generating hybrid images and interactively selecting the best‑focused image from a stack using power spectrum analysis.
@@ -56,13 +55,13 @@ python src/autofocus.py data/focus1.jpg data/focus2.jpg data/focus3.jpg data/foc
 - Press q to quit.
 
 ## Files
-- src/hybrid.py                 – hybrid image generator.
-- src/autofocus.py              – interactive autofocus simulator.
-- src/convolution_theorem.py    – convolution theorem verification.
-- src/utils.py                  – helper functions (provided with assignment).
-- data/                         – sample images (elephant.png, cheetah.png, focus stack).
-- data/filters                  - filters for convolution.
-- images/                       - sample hybrid output.
-- requirements.txt              – Python dependencies.
+- src/hybrid.py – hybrid image generator.
+- src/autofocus.py – interactive autofocus simulator.
+- src/convolution_theorem.py – convolution theorem verification.
+- src/utils.py – helper functions (provided with assignment).
+- data/ – sample images (elephant.png, cheetah.png, focus stack).
+- data/filters - filters for convolution.
+- images/ - sample hybrid output.
+- requirements.txt – Python dependencies.
 
 This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.

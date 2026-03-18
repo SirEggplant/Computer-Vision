@@ -32,7 +32,7 @@ python src/template_match.py --image data/mario_small.jpg --template data/coin_s
 
 Optional arguments:
 - --scale-factor : Downscaling factor for each level when doing multi-scale detection (default: 0.5).
-- --levels       : Number of levels (image sizes) to use (default: 1, meaning only original size).
+- --levels: Number of levels (image sizes) to use (default: 1, meaning only original size).
 
 Example with multi-scale:
 ```bash
@@ -45,11 +45,11 @@ python src/template_match.py --image data/mario_small.jpg --template data/coin_s
 - Press any key in the window to close it.
 
 ## Files
-- src/template_match.py      – main object detection script.
-- src/bounding_boxes.py      – bounding box utilities (IoU, etc.).
-- src/correlation.py         – (optional) custom correlation implementation.
-- src/config.py              – default parameters (if provided).
-- data/                      – sample images (mario_small.jpg, coin_small.png).
-- requirements.txt           – Python dependencies.
+- src/template_match.py – main object detection script.
+- src/bounding_boxes.py – bounding box utilities (IoU, etc.).
+- src/correlation.py – custom correlation implementation.
+- src/config.py – default parameters (if provided).
+- data/ – sample images (mario_small.jpg, coin_small.png).
+- requirements.txt – Python dependencies.
 
 This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.

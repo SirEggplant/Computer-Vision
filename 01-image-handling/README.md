@@ -22,7 +22,6 @@ The included demo script loads an image, applies most of the above transformatio
 - Required packages: numpy, opencv-python
 
 **Running the demo**
-
 ```bash
 cd 01-image-handling
 pip install -r requirements.txt

@@ -20,7 +20,6 @@ Part 2: Panorama Stitching (panorama.py)
 - Shows the final stitched panorama.
 
 ## How to Run
-
 **Prerequisites**
 - Python 3.10+
 - Required packages: numpy, opencv-python
@@ -78,9 +77,7 @@ Tip: Choose points that are spread out across the scene and not collinear for be
 ## Files
 - src/underwater.py – underwater enhancement implementation.
 - src/panorama.py – panorama stitching with manual point selection.
-- data/ – sample images:
-  - underwater01.jpg, underwater02.jpg, underwater03.jpg
-  - paris_a.jpg, paris_b.jpg, paris_c.jpg
+- data/ – sample images
 - requirements.txt – list of Python dependencies.
 - panorama_example.jpg - jpg of the result from panorama.
 

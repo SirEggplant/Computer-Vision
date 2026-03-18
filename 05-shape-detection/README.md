@@ -27,7 +27,7 @@ Usage: python src/find_shapes.py <image_path> <size> <color> <shape> [--min-area
 
 Positional Arguments:
 - image_path: Path to the input image (e.g., data/shapes.png).
-- size: Either "large" or "small".
+- size: Either large or small.
 - color: red, yellow, green, cyan, blue, or magenta.
 - shape: circle, wedge, rectangle, or cross.
 
@@ -41,24 +41,23 @@ Find all small red circles in the sample image:
 ```bash
 python src/shape_finder.py data/shapes.png small red circle
 ```
-Find large blue rectangles with a hue tolerance of 15:
+Find large blue rectangles:
 ```bash
 python src/shape_finder.py data/shapes.png large blue rectangle
 ```
-Find all green wedges (any size) – note that size is required, so you must specify either small or large:
+Find large green wedges:
 ```bash
 python src/shape_finder.py data/shapes.png large green wedge
 ```
 
 **What to Expect**
 - The script will open a window showing the original image with a crosshair drawn at the centroid of each detected shape.
-- The window title displays the count and description (e.g., "Located 3 small red circles").
 - Press any key to close the window.
 
 ## Files
-- src/find_shapes.py        – main shape detection script.
-- src/bounding_boxes.py     – (may be used for IoU, but not directly here).
-- data/shapes.png           – sample test image.
-- requirements.txt          – Python dependencies.
+- src/find_shapes.py – main shape detection script.
+- src/bounding_boxes.py – (may be used for IoU, but not directly here).
+- data/shapes.png – sample test image.
+- requirements.txt – Python dependencies.
 
 This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.
