@@ -1,6 +1,7 @@
 # 05-shape-detection
 This script detects shapes of a specified size, color, and type in an image. 
-It uses Otsu thresholding, color‑based segmentation in HSV space, connected components analysis, and moment‑based shape classification.
+It uses Otsu thresholding, color‑based segmentation in HSV space, 
+connected components analysis, and moment‑based shape classification.
 
 **What It Does**
 - Loads an image and isolates regions of a given color by thresholding on hue.
@@ -11,7 +12,6 @@ It uses Otsu thresholding, color‑based segmentation in HSV space, connected co
 - Annotates the original image with a crosshair at each detected location and displays the result.
 
 ## How to Run
-
 **Prerequisites**
 - Python 3.10+
 - Required packages: numpy, opencv-python
@@ -32,8 +32,8 @@ Positional Arguments:
 - shape: circle, wedge, rectangle, or cross.
 
 Optional Arguments:
-  --min-area    Minimum area (in pixels) for a component to be considered a shape (default: 10).
-  --hue-tolerance  Allowed deviation from the target hue when thresholding (default: 10).
+- --min-area    Minimum area (in pixels) for a component to be considered a shape (default: 10).
+- --hue-tolerance  Allowed deviation from the target hue when thresholding (default: 10).
 
 Examples:
 

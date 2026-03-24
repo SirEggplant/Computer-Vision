@@ -32,7 +32,7 @@ Example:
 python src/harris_corners.py data/paris_a.jpg --blur-size 3 --block-size 3 -k 0.05
 ```
 
-**Interactive usage:**
+**Interactive Usage:**
 - A window opens showing two images side‑by‑side: OpenCV’s corners (left) and your custom implementation (right).
 - A slider lets you adjust the threshold; corners above the threshold are drawn as red circles.
 - Press q to close the window.
@@ -53,7 +53,7 @@ Example of stitch three images and save to file:
 python src/panorama.py data/paris_a.jpg data/paris_b.jpg data/paris_c.jpg -r 1 -o my_panorama.jpg
 ```
 
-**What to expect:**
+**What to Expect:**
 - The script prints the number of good matches found between each image and the reference.
 - If -o is not given, a window titled "Panorama" opens showing the stitched result. Press any key to close.
 - If an output path is provided, the panorama is saved to that file (no window appears).

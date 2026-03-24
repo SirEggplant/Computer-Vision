@@ -63,7 +63,7 @@ python src/panorama.py --image1 data/paris_a.jpg --image2 data/paris_b.jpg --out
 
 The optional --border-size argument controls the size of the blending border (default: 50).
 
-**Interactive workflow:**
+**Interactive Workflow:**
 1. Two windows will appear: "left image" and "right image".
 2. Click on a distinctive point in the left image (e.g., a corner of a building).
 3. Immediately click on the corresponding point in the right image.

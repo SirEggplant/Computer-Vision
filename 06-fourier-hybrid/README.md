@@ -16,7 +16,7 @@ It runs silently and only produces output if the results do not match.
 ## How to Run
 **Prerequisites**
 - Python 3.10+
-- Required packages: numpy, opencv-python, matplotlib (for autofocus plotting)
+- Required packages: numpy, opencv-python, matplotlib
 
 **Setup**
 ```bash

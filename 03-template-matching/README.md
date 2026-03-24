@@ -22,7 +22,6 @@ pip install -r requirements.txt
 ```
 
 **Running Template Matching**
-
 Basic usage: python src/template_match.py --image <scene_image> --template <template_image> --threshold <value> --nms-threshold <value>
 
 Example with provided images:
@@ -39,7 +38,7 @@ Example with multi-scale:
 python src/template_match.py --image data/mario_small.jpg --template data/coin_small.png --threshold 0.7 --nms-threshold 0.3 --scale-factor 0.8 --levels 3
 ```
 
-**What to expect:**
+**What to Expect:**
 - The script will open a window showing the scene with bounding boxes drawn around detected objects.
 - The number of matches is displayed at the bottom left.
 - Press any key in the window to close it.
