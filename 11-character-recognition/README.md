@@ -37,4 +37,4 @@ A window will open showing the annotated image. Press any key to close.
 - model/checkpoint_best.pt – pre‑trained model checkpoint.
 - data/ – folder containing test images.
 
-This project was completed as part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.
+This assignment is part of CSCI-631: Foundations of Computer Vision at Rochester Institute of Technology.
